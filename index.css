@@ -1,0 +1,168 @@
+#outside {
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  transition: 1s;
+  transform-origin: 0;
+}
+
+.open-card {
+  transform: rotateY(90deg);
+}
+
+#outside-title {
+  color: white;
+  font-size: 2rem;
+  top: 0;
+  display: fixed;
+  position: relative;
+  margin-left: 80vh;
+}
+#outside-pic {
+  width: 100vh;
+  height: 75vh;
+  padding-top:70px;
+  border-radius: 10px 10px;
+}
+#open{
+  color: darkorange;
+  font-size: 1rem;
+  border-radius:10px;
+  font-weight: 700;
+}
+
+*
+  {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+header{
+  position: absolute;
+  top: 0;
+}
+
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+  color: white;
+  text-shadow: 2px 2px 5px orange;
+  font-family: Roboto, sans-serif;
+  
+}
+
+h3{
+  text-align: center;
+}
+
+.p-counter{
+    width: 170px;
+    height: 70px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    
+}
+
+.p-counter h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.p-counter .turn-box{
+    border: 3px dashed white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    grid-gap: 50px;
+    
+}
+.turn-box:hover{
+    background-color: #FF2E63; 
+}
+
+.turn-box-x{
+  background-color: darkolivegreen;
+}
+
+.turn-box-o{
+  background-color: red;
+}
+
+.p-counter .turn-box:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF2E63;
+    z-index: -1;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.cellContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+   grid-template-rows: repeat(5, 2fr);
+  width: 50vh;
+  height: 50vh;
+  grid-gap: 5px;
+  margin: auto;
+  
+}
+
+.cell {
+  border: none;
+  background-color: yellowgreen;  
+  text-align: center;
+   font-size: 2.5rem;
+    font-weight: 1000;
+}
+
+
+.cell:hover{
+    background-color: #FF2E63;
+    background-attachment: url('images/beep.mp3');
+}
+footer{
+  bottom: 10px;
+  position: absolute;
+}
+
+#restartBtn{
+  box-shadow: 10px 4px 5px green;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 50px;
+  background-color: rgb(255, 140, 105);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#restartBtn:hover{
+    padding: 10px 40px;
+    background-color: #08D9D6;
+    color: #000;
+}
